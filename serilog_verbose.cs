@@ -3,7 +3,7 @@ using Serilog.Core;
 using Serilog.Events;
 using Serilog.Sinks.Datadog.Logs;
 using Serilog.Sinks.File;
-
+//working
 namespace MyProject
 {
     class Program
