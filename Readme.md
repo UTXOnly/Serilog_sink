@@ -29,7 +29,7 @@ Must have `dotnet-sdk` installed on your machine:
 
 2. Execute the `.run.sh` script to install all dependeincies and create the project folder
 
-This wil then run the program which will produce a log file locally in the `publish` directory and ship logs to Datadog
+This will then run the program which will produce a log file locally in the `publish` directory and ship logs to Datadog
 **You should now be able to view logs in Datadog Log Explorer!**
 
 ## Demonstration
