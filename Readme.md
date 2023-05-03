@@ -17,7 +17,7 @@ Must have `dotnet-sdk` installed on your machine:
 1. Open the command line and navigate to the directory where you want to create your project.
 2. Run `dotnet new console -n MyProject` to create a new console project called `MyProject`.
 3. Move into the Project directory using `cd MyProject`
-4. Populate the `csproj` file by running `cat csproj_config >> MyProject.csproj`
+4. Populate the `csproj` file by running `cat ../csproj_config > MyProject.csproj`
 5. Run the following commands to add the required NuGet packages:
 
 ```
@@ -27,7 +27,7 @@ dotnet add package Serilog.Sinks.Console --version 4.1.0
 dotnet restore
 ```
 
-6. Move the `.cs` file into the project folder using `mv ../serilog_debug.cs ./`
+6. Delete the generic `Program.cs` file and move the `.cs` file into the project folder using `rm -r Program.cs && mv ../serilog_debug.cs ./`
 
 7. Enter your API key in this section in `serilog_debug.cs` and save:
 ```
@@ -43,5 +43,5 @@ dotnet restore
 8. Run `dotnet publish -c Release -o ./publish` to build the application and generate the publish folder.
 9. Navigate to the `publish` folder by running `cd publish`.
 10. Run `dotnet MyProject.dll` to start the application.
-**You should now be shipping logs to Datadog**
+**You should now be shipping logs to Datadog!**
 
