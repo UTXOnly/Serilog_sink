@@ -1,6 +1,5 @@
 using Serilog;
 using System;
-using DotNetEnv;
 using Serilog.Core;
 using Serilog.Events;
 using Serilog.Sinks.Datadog.Logs;
